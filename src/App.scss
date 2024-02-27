@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background: #090909;
+  min-height: 100vh;
+
+}
+
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p0 {
+  padding: 0px;
+}
+
+// All transitions
+div,
+ul,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+button {
+  -webkit-transition: background-color 0.7s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+textarea {
+  resize: none;
+  height: 60px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0;
+}
+
+
+.grey {
+  color: #888 !important;
+}
+
+
+
+.ptb20 {
+  padding: 20px 0;
+}
+
+
+
+
+.ptb60 {
+  padding: 60px 0;
+}
+
+
+
+
+
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.purple {
+  color: #6c01c3;
+}
+
+.yellow {
+  color: #ffc13d;
+}
+
+.border-img {
+  border-radius: 10px;
+}
+
+.common {
+  color: #ff0083;
+}
+
+.green {
+  color: #6dff39;
+}
+
+.red {
+  color: #f41e5e;
+}
+
+.white {
+  color: #fff !important;
+}
+
+.blue {
+  color: #133572;
+}
+
+.navbar-toggle {
+  background-color: #333;
+
+  .icon-bar {
+    background-color: #eee;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    outline: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .main-footer {
+    text-align: center;
+
+    .text-right {
+      text-align: center !important;
+    }
+  }
+
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .ptb {
+    padding: 30px 0;
+  }
+
+  .xs-0 {
+    padding: 0px;
+  }
+
+  .main-mint,
+  .main-banner {
+    .inner-content {
+      .modal-content {
+        .for-padding {
+          padding: 0 0px !important;
+        }
+      }
+    }
+  }
+
+  .main-give {
+    .right-side {
+      margin-top: 30px !important;
+
+      h5 {
+        font-weight: 500;
+      }
+
+      li {
+        margin-right: 2px !important;
+      }
+    }
+  }
+}
+
+// 12 pro
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+
+  h1 {
+    font-size: 3rem !important;
+  }
+
+  .ptb {
+    padding: 20px 0;
+  }
+}
+
+
+
+iframe {
+  position: unset !important;
+  top: 0px !important;
+  left: 0px !important;
+  width: 0px !important;
+  height: 0px !important;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 30px !important;
+  }
+
+  .col-md-6 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .col-md-8 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .col-md-4 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+button:focus {
+  outline: none !important;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+.form-control:focus {
+  box-shadow: unset;
+}
+
+
+@media(max-width:600px) {
+  .modal.show .modal-dialog {
+    max-width: 100% !important;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea:focus-visible {
+  outline: none !important;
+
+}
+
+button,
+input,
+optgroup,
+select,
+textarea:focus {
+  outline: none !important;
+
+}
+
+button.close {
+  opacity: 1;
+}
+
+
+.custom-container {
+  max-width: 1270px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.black-btn {
+  border-radius: 50px;
+  background: #121212;
+  padding: 14px 27px;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+}
+
+.green-btn{
+  border-radius: 50px;
+  background: #61D290;
+  padding: 16px 20px;
+  color: #002B12;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

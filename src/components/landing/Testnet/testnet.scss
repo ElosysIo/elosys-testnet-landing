@@ -1,0 +1,107 @@
+.main-testnet{
+    position: relative;
+    padding: 60px 0;
+    z-index: 99;
+    overflow: hidden;
+    .whydose-top-right{
+        position: absolute;
+        top: 0;
+        right: 0;
+        pointer-events: none;
+        z-index: -1;
+    }
+    .whydoes-mid-bottom{
+        position: absolute;
+        bottom: -100%;
+        left: 50%;
+        pointer-events: none;
+        z-index: -1;
+        transform: translate(-50%, 10px);
+    }
+    .main-heading{
+        max-width: 684px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 90px;
+        h6{
+            color: #FFF;
+            text-align: center;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 20px;
+        }
+        p{
+            color: rgba(255, 255, 255, 0.70);
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%; 
+        }
+    }
+    .bottom-content{
+        .parent-cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            .single-card{
+                border-radius: 15px;
+                border: 2px solid rgba(255, 255, 255, 0.10);
+                background: rgba(255, 255, 255, 0.02);
+                box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+                backdrop-filter: blur(50px);
+                padding: 45px 40px 45px 30px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                height: 295px;
+                overflow: hidden;
+                img{
+                    margin-bottom: 29px;
+                    margin-left: -8px;
+                }
+                h6{
+                    color: #FFF;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 120%;
+                    text-transform: capitalize;
+                }
+                p{
+                    color: rgba(255, 255, 255, 0.60);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 120%;
+                    margin-top: 11px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:1024px){
+    .main-testnet .bottom-content .parent-cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .main-testnet .bottom-content .parent-cards .single-card{
+        height: auto;
+    }
+}
+
+@media (max-width:1024px){
+    .main-testnet .main-heading h6{
+        font-size: 32px;
+    }
+    .main-testnet .main-heading p{
+        font-size: 16px;
+    }
+    .main-testnet .bottom-content .parent-cards{
+        grid-template-columns: 1fr;
+    }
+}

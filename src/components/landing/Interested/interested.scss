@@ -1,0 +1,84 @@
+.interested{
+    position: relative;
+    z-index: 99;
+    height: 493px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .lastone-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        pointer-events: none;
+        z-index: -1;
+        object-fit: cover;
+    }
+    .left-content{
+        max-width: 633px;
+        width: 100%;
+        h6{
+            color: #FFF;
+            font-size: 47px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 22px;
+        }
+        p{
+            color: #FFF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; 
+            margin-bottom: 60px;
+        }
+        a{
+            border-radius: 45px;
+            background: #FFF;
+            padding: 22px 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 233px;
+            width: 100%;
+            color: #000;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    }
+    .right-content{
+        .wrapper-img{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+@media (max-width:1024px){
+    .interested{
+        height: auto;
+        padding-top: 60px;
+    }
+    .interested .left-content{
+        max-width: 100%;
+        margin-bottom: 60px;
+    }
+    .interested .right-content .wrapper-img{
+        position: static;
+    }
+    .interested .lastone-bg{
+        height: 100%;
+    }
+    .interested .left-content h6{
+        font-size: 32px;
+    }
+    .interested .left-content p{
+        font-size: 16px;
+    }
+}
